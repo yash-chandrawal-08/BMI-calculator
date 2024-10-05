@@ -1,9 +1,31 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.BMICalculator" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <!-- Base application theme -->
+    <style name="Theme.BMILight" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/light_grey</item>
+        <item name="colorAccent">@color/blue</item>
+        <!-- Background color -->
+        <item name="android:colorBackground">@color/very_light_grey</item>
+        <!-- Text color -->
+        <item name="android:textColor">@color/dark_grey</item>
+        <!-- Button styles -->
+        <item name="android:buttonStyle">@style/Widget.App.Button</item>
+        <!-- Text input style -->
+        <item name="android:editTextStyle">@style/Widget.App.EditText</item>
     </style>
 
-    <style name="Theme.BMICalculator" parent="Base.Theme.BMICalculator" />
+    <!-- Custom button style -->
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:buttonCornerRadius">16dp</item>
+    </style>
+
+    <!-- Custom EditText style -->
+    <style name="Widget.App.EditText" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxStrokeColor">@color/blue</item>
+    </style>
 </resources>

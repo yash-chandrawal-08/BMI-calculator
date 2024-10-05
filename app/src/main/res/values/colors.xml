@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="light_grey">#F0F0F0</color>
+    <color name="blue">#2196F3</color> <!-- Blue for accent -->
+    <color name="very_light_grey">#FAFAFA</color> <!-- Very light grey for background -->
+    <color name="dark_grey">#333333</color> <!-- Dark grey for text -->
 </resources>
