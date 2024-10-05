@@ -1,19 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/blue">
 
-    <TextView
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="24dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/custome_edittext">
+
+    <EditText
+        android:id="@+id/edtweight"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/custome_edittext"
+        android:ems="12"
+        android:gravity="center"
+        android:hint="@string/hint_wt"
+        android:inputType="number"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"
+        android:id="@+id/edtHightFt"
+        android:ems="12"
+        android:gravity="center"
+        android:background="@drawable/custome_edittext"
+        android:hint="@string/hint_htF"
+        android:inputType="number"
+        android:layout_marginTop="@dimen/_18sdp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"
+        android:id="@+id/edtHightIn"
+        android:ems="12"
+        android:gravity="center"
+        android:background="@drawable/custome_edittext"
+        android:hint="@string/hint_htI"
+        android:inputType="number"
+        android:layout_marginTop="@dimen/_18sdp"/>
+
+    <Button
+        android:id="@+id/btnCalc"
+        style="@style/Widget.App.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="CALCULATE BMI"
+        android:layout_marginTop="@dimen/_22sdp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_18sdp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
